@@ -32,7 +32,7 @@ class s_coordinate(object):
         self.N = int(N)
         self.Np = self.N+1
 
-        self.hc = min(self.hmin, self.Tcline)
+        self.hc = min(max(0, self.hmin), self.Tcline)
 
         self.Vtrans = 1
 
